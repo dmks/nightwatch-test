@@ -12,4 +12,5 @@ dependencies:
 
 test:
   post:
-    - nightwatch --config spec/nightwatch.json
+    - npm install
+    - npm run integration_tests

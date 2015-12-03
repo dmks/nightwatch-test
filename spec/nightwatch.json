@@ -23,6 +23,12 @@
         "demoDomain": "http://demo.summit.com",
         "demoCode": "rzfmwdkg"
       }
-    }
+    },
+    "circleci": {
+      "globals": {
+        "mainDomain": "http://app.mysummitps.org",
+        "demoDomain": "http://demo.mysummitps.org"
+      }
+	}
   }
 }
