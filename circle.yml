@@ -8,7 +8,6 @@ dependencies:
   post:
     - java -jar spec/nightwatch/lib/selenium-server-standalone-2.44.0.jar:
       background: true
-
 test:
   post:
     - npm install
