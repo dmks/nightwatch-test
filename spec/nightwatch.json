@@ -4,8 +4,6 @@
   "globals_path": "spec/globals/default.js",
   "output_folder": "spec/tests_output",
   "selenium": {
-    "start_process": true,
-    "server_path": "spec/lib/selenium-server-standalone-2.44.0.jar",
     "cli_args" : {
       "webdriver.chrome.driver": "spec/lib/chromedriver_2_16"
     }
