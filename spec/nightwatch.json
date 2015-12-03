@@ -25,7 +25,7 @@
     "circleci": {
       "globals": {
         "mainDomain": "http://app.mysummitps.org",
-        "demoDomain": "http://demo.mysummitps.org"
+        "demoDomain": "http://demo.mysummitps.org",
         "demoCode": "ethsbxqo"
       }
 	}
