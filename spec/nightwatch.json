@@ -1,0 +1,28 @@
+{
+  "src_folders": ["spec/tests"],
+  "custom_commands_path": "spec/cmds",
+  "globals_path": "spec/globals/default.js",
+  "output_folder": "spec/tests_output",
+  "selenium": {
+    "start_process": true,
+    "server_path": "spec/lib/selenium-server-standalone-2.44.0.jar",
+    "cli_args" : {
+      "webdriver.chrome.driver": "spec/lib/chromedriver_2_16"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "silent": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true
+      },
+      "globals": {
+        "mainDomain": "http://app.summit.com",
+        "demoDomain": "http://demo.summit.com",
+        "demoCode": "rzfmwdkg"
+      }
+    }
+  }
+}

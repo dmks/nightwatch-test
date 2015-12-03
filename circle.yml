@@ -1,0 +1,15 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+  node:
+    version: 0.12.2
+
+dependencies:
+  override:
+
+test:
+  post:
+    - nightwatch --config spec/nightwatch.json
