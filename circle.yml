@@ -12,4 +12,4 @@ dependencies:
       
 test:
   post:
-    - npm run integration_tests
+    - npm run integration_tests_circleci

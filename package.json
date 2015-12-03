@@ -15,7 +15,8 @@
     "npm": "2.5.x"
   },
   "scripts": {
-    "integration_tests": "nightwatch --config spec/nightwatch.json --env circleci",
+    "integration_tests": "nightwatch --config spec/nightwatch.json --env default",
+    "integration_tests_circleci": "nightwatch --config spec/nightwatch.json --env circleci",
     "selenium_server": "java -jar spec/lib/selenium-server-standalone-2.44.0.jar"
   }
 }
