@@ -8,7 +8,7 @@ dependencies:
   post:
     - npm install
     - npm run selenium_server:
-      background: true
+        background: true
       
 test:
   post:
