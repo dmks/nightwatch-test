@@ -6,10 +6,10 @@ machine:
 
 dependencies:
   post:
-    - java -jar "spec/lib/selenium-server-standalone-2.44.0.jar":
+    - npm install
+    - npm run selenium_server:
       background: true
       
 test:
   post:
-    - npm install
     - npm run integration_tests
