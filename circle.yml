@@ -1,14 +1,13 @@
 ## Customize the test machine
 machine:
 
-  timezone:
-    America/Los_Angeles # Set the timezone
-
   node:
     version: 0.12.2
 
 dependencies:
-  override:
+  post:
+    - java -jar spec/nightwatch/lib/selenium-server-standalone-2.44.0.jar:
+      background: true
 
 test:
   post:
