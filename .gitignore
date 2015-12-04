@@ -2,3 +2,8 @@ selenium-debug.log
 node_modules/
 npm-debug.log
 spec/tests_output/
+/.bundle
+/db/*.sqlite3
+/log/*.log
+/tmp
+.idea/*
