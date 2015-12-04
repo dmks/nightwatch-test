@@ -9,15 +9,13 @@ dependencies:
     - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
   post:
     - npm install
-    - npm run selenium_server:
-        background: true
-      
-test:
-  post:
-    - npm run integration_tests_circleci
 
 deployment:
   staging:
     branch: master
-    heroku:
-      appname: circleci-test
+    commands:
+      - git push git@heroku.com:circleci-test.git $CIRCLE_SHA1:master
+      - heroku run rake db:migrate --app circleci-test
+      - npm run selenium_server:
+          background: true
+      - npm run integration_tests_circleci
